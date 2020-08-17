@@ -25,7 +25,7 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata.title} />
+      <Header siteTitle={"Jackson Isenberg"} />
       <div
         style={{
           margin: `0 auto`,
