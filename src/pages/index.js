@@ -1,22 +1,16 @@
 import React from "react"
-import { Link } from "gatsby"
+import Header from "../components/header"
+import Subtitle from "../components/subtitle"
+import Body from "../components/body"
 
-import Layout from "../components/layout"
-import Image from "../components/image"
-import SEO from "../components/seo"
+function Home() {
+    return (
+        <div style={{ color: 'black', padding: '15px' }}>
+            <Header headerText="Jackson Isenberg"/>
+            <Subtitle text="Welcome to my website!" />
+            <Body />
+        </div>
+    );
+}
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="Home" />
-    <h1>Jackson Isenberg</h1>
-    <p>Hello.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link> <br />
-    <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
-  </Layout>
-)
-
-export default IndexPage
+export default Home
